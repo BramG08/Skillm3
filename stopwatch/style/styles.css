@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+    background: black;
+}
+
+.container{
+    background-color: white;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left:50%;
+    padding:20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.338);
+}
+
+.timer-display{
+    position: relative;
+    width:92%;
+    background: white;
+    left:4%;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    font-size: 3rem ;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65,5,145,0.25);
+}
+
+.buttons{
+    display: flex;
+    width: 90%;
+    margin: 60px auto 0 auto;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 120px;
+    height: 45px;
+    background-color: 8c52ff;
+    background-color: green;
+    color: white;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2){
+    background-color: orange;
+}
+.buttons button:nth-last-child(1){
+    background-color: red;
+}
+
+
+.buttons button:hover{
+    box-shadow: 0 0 20px rgba(0, 0 ,0, 0.25); 
+}
