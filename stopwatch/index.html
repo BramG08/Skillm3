@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styles.css">
-    <script src="js/main.js" defer></script>
-    <title>Stopwatch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/JsonLoad.js" defer></script>
+  <title>Opdacht 2 Widgets</title>
 </head>
+
 <body>
-    <div class="container">
-       <div class="timer-display">
-         00 : 00 : 00 : 000
-       </div>
-       <div class="buttons">
-         <button id="start-timer">Start</button>
-         <button id="pause-timer">Pause</button>
-         <button id="reset-timer">Reset</button>
-       </div>
+  <div class="container-flex">
+    <div class="container-stopwatch container-item">
+      <div class="timer-display">
+        00 : 00 : 00 : 000
+      </div>
+      <div class="buttons">
+        <button id="start-timer">Start</button>
+        <button id="pause-timer">Pause</button>
+        <button id="reset-timer">Reset</button>
+      </div>
     </div>
+
+    <div class="container-slideshow container-item">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/bearConfused.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/RyanReynolds.png">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/SeaOfThieves.png">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+    <div class="container-Json container-item">
+      <img  id="js-img" src="" alt="">
+      <p id="js-text"></p>
+    </div>
+
+
+
+  </div>
 </body>
+
 </html>
