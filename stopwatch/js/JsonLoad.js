@@ -1,5 +1,4 @@
 
-
  const text = document.getElementById("js-text");
  const img = document.getElementById("js-img");
 

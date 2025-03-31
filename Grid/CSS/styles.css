@@ -1,0 +1,24 @@
+*{
+margin : 0;
+padding: 0;
+box-sizing : border-box;
+}
+
+html{
+    font-size : 62.5%;
+ }
+
+ body{
+
+    padding:4rem;
+ }
+
+
+ .dashboard{
+    width:100%;
+    height:85vh;
+    background:blue;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+ }
