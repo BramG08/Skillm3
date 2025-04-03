@@ -14,6 +14,13 @@ body {
    background-color: lightcoral;
 }
 
+header{
+background-color: white;
+text-align: center;
+font-size: 2rem;
+position: fixed;
+
+}
 
 .dashboard {
    width: 100%;
